@@ -5,11 +5,32 @@ https://imagecolorpicker.com/en
 
 
 
-1) Make container div that will be 100vh and 100wv, make appropriate color (check in website)
-2) Make another div: "content"
-3) Inside content div make 2 more divs: for title and for card
+(done) 1) Make container div that will be 100vh and 100wv, make appropriate color (check in website)
+(done) 2) Make another div: "content"
+(done) 3) Inside content div make 2 more divs: for title and for card
 4) Make underline for title
 5) Make necessary modifications for card, make button, make all that shit
+
+
+
+
+LOGIC FOR CARD:
+(done) 1) Round image with img tag and border radius
+2) h3 with name and last name
+3) The occupation (who he is)
+4) some lorem with p tag
+5) 2 buttons < and >
+6) Another button called: "Surprise Me"
+
+
+LOGIC FOR JS TO IMPLEMENT NEW IMG
+
+
+(done) 1) Grab the left, right and surprise me button
+(done) 3) fill out 1 other person in the array 
+4) addEventListner to the right button. 
+Inside listener: use for loop to loop through items in array 
+
 
 
 
