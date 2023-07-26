@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -36,7 +36,7 @@
   margin-top: 50px;
   background-color: #fefeff;
   border-radius: 10px;
-  box-shadow: -3px 2px 0px 9px rgba(235,236,238,0.22);
+  box-shadow: -3px 2px 0px 9px rgba(235, 236, 238, 0.22);
 }
 
 img {
@@ -80,11 +80,9 @@ img {
   font-weight: 600;
   background-color: transparent;
   font-size: 25px;
-  
 }
 
 button {
-  
   cursor: pointer;
   border: 2px solid #5a869f;
   background-color: #e5eef5;
@@ -93,10 +91,11 @@ button {
   padding: 5px 10px;
   outline: none;
   margin-top: 5px;
-
 }
 
 button:hover {
   background-color: #5a869f;
   color: white;
 }
+
+
