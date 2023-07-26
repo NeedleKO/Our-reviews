@@ -9,7 +9,7 @@ https://imagecolorpicker.com/en
 (done) 2) Make another div: "content"
 (done) 3) Inside content div make 2 more divs: for title and for card
 4) Make underline for title
-5) Make necessary modifications for card, make button, make all that shit
+(done) 5) Make necessary modifications for card, make button, make all that shit
 
 
 
@@ -23,14 +23,20 @@ LOGIC FOR CARD:
 6) Another button called: "Surprise Me"
 
 
-LOGIC FOR JS TO IMPLEMENT NEW IMG
-
+LOGIC FOR JS TO IMPLEMENT NEW IMG:
 
 (done) 1) Grab the left, right and surprise me button
 (done) 3) fill out 1 other person in the array 
 4) addEventListner to the right button. 
 Inside listener: use for loop to loop through items in array 
 
+PROBLEM?: When i press >, loop automatically goes all the way to the end of the array. 
+Break the problem down:
+
+There is an array: let array1 = [cat, dog, mouse. horse]
 
 
 
+LOGIC TO IMPLEMENT RIGHT/LEFT ABILITY FOR OUR REVIEWS CARD:
+
+1) 

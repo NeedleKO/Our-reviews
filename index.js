@@ -27,37 +27,56 @@ const reviews = [
     name: "Frank Zappa",
     job: "THE PHOTOGRAPHER",
   },
-  {
-    id: 4,
-    name: "Marks Jagurs",
-    job: "DONT HAVE ONE",
-  },
 ];
 
+let counter = 0;
+
 rightBtn.addEventListener("click", () => {
-  for (let i = 0; i < reviews.length; i++) {
-    if (reviews[0].id === 1) {
-      author.textContent = reviews[0].name;
-      job.textContent = reviews[0].job;
-      document.getElementById("person-img").src = "/workers imgs/worker1.jpg";
-    }
-    if (reviews[1].id === 2) {
-      author.textContent = reviews[1].name;
-      job.textContent = reviews[1].job;
-      document.getElementById("person-img").src = "/workers imgs/worker2.jpg";
-    }
-    if (reviews[2].id === 3) {
-      author.textContent = reviews[2].name;
-      job.textContent = reviews[2].job;
-      document.getElementById("person-img").src = "/workers imgs/worker3.jpg";
-    }
-    if (reviews[3].id === 4) {
-        author.textContent = reviews[3].name;
-        job.textContent = reviews[3].job;
-        document.getElementById("person-img").src = "/workers imgs/worker3.jpg";
-      }
+  counter += 1;
+
+  if (counter > 2) {
+    counter = 0;
   }
-  //   document.getElementById("person-img").src = "/workers imgs/worker2.jpg";
+  if (reviews[counter].id === 1) {
+    author.textContent = reviews[counter].name;
+    job.textContent = reviews[counter].job;
+    document.getElementById("person-img").src = "/workers imgs/worker1.jpg";
+  }
+  if (reviews[counter].id === 2) {
+    author.textContent = reviews[counter].name;
+    job.textContent = reviews[counter].job;
+    document.getElementById("person-img").src = "/workers imgs/worker2.jpg";
+  }
+  if (reviews[counter].id === 3) {
+    author.textContent = reviews[counter].name;
+    job.textContent = reviews[counter].job;
+    document.getElementById("person-img").src = "/workers imgs/worker3.jpg";
+  }
+
+  console.log(counter);
+
+  
 });
 
-// console.log(reviews[0].name);
+leftBtn.addEventListener("click", () => {
+  counter -= 1;
+  if (counter < 0) {
+    counter = 2;
+  }
+  if (reviews[counter].id === 1) {
+    author.textContent = reviews[counter].name;
+    job.textContent = reviews[counter].job;
+    document.getElementById("person-img").src = "/workers imgs/worker1.jpg";
+  }
+  if (reviews[counter].id === 2) {
+    author.textContent = reviews[counter].name;
+    job.textContent = reviews[counter].job;
+    document.getElementById("person-img").src = "/workers imgs/worker2.jpg";
+  }
+  if (reviews[counter].id === 3) {
+    author.textContent = reviews[counter].name;
+    job.textContent = reviews[counter].job;
+    document.getElementById("person-img").src = "/workers imgs/worker3.jpg";
+  }
+  console.log(counter);
+});
